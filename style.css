@@ -1,50 +1,62 @@
-body {
-  background-image: url("https://wallpapertag.com/wallpaper/full/6/2/2/198303-gym-background-2278x1521-mac.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@font-face {
+  font-family: "SuperMario256";
+  src: url("./fonts/SuperMario256.ttf") format("truetype");
 }
-
-form {
-  width: 80%;
-  background-color: rgba(255, 255, 255, 0.9); /* Белый с прозрачностью */
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* тень */
-}
-
 h1 {
-  text-align: center;
+  font-family: "SuperMario256", sans-serif;
 }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: block;
-}
-
-input,
-select {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px; /* Закругление углов полей */
-  font-size: 14px;
-}
-
-button {
+header {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
 }
 
-div {
-  margin-bottom: 15px;
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/1200x/1f/a4/46/1fa44618d7b48d7471b26c58196fedc1.jpg");
+  margin: 0;
+}
+.Characters_gallery {
+  width: 100%;
+  min-height: 600px;
+  padding: 15px 0px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Characters > img {
+  width: 220px;
+}
+.Characters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  width: 350px;
+  align-content: start;
 }
